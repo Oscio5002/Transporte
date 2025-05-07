@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta name="description" content="ELOHIM Transporte y Logística - Siempre a Tiempo. Servicios de transporte y alquiler de maquinaria industrial.">
+  <meta name="keywords" content="transporte, logística, camiones, maquinaria, carga, industrial, Elohim, envío">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tusitio.github.io/">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ELOHIM - Siempre a Tiempo...</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <style>
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background-color: #222;
+      flex-wrap: wrap;
+      text-align: center;
+      position: relative;
+    }
+
+    .logo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo {
+      max-height: 1400px;
+    }
+
+    .mensaje-logistica {
+      background-color: white;
+      color: green;
+      padding: 8px 12px;
+      border-radius: 10px;
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 28px;
+      display: inline-block;
+    }
+
+    .fecha-hora {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      color: white;
+      font-size: 16px;
+    }
+
+    .imagenes img {
+      max-width: 200px;
+      margin: 10px;
+      border-radius: 12px;
+      display: block;
+    }
+
+    .descripcion-imagen {
+      text-align: center;
+      font-size: 14px;
+      color: #444;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn.secondary {
+      background-color: #007bff;
+    }
+
+    .btn.maquinaria {
+      background-color: #ff9800;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    .wsp, .volver-inicio, .email-flotante {
+      position: fixed;
+      bottom: 20px;
+      font-size: 16px;
+      padding: 10px 15px;
+      border-radius: 50px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      z-index: 999;
+    }
+
+    .email-flotante {
+      right: 20px;
+      background-color: #ff5722;
+    }
+
+    .wsp {
+      right: 100px;
+      background-color: #25D366;
+    }
+
+    .volver-inicio {
+      right: 180px;
+      background-color: #007bff;
+    }
+
+    .mensaje-exito {
+      text-align: center;
+      color: green;
+      font-weight: bold;
+      margin: 10px;
+      font-size: 100px;
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1000;
+    }
+
+    .hero .overlay {
+      text-align: center;
+    }
+
+    .hero .overlay .btn-group {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .btn-group .btn:last-child {
+      margin-left: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <header>
+      <div class="logo-container">
+        <img src="assets/images/logo.png" alt="Logo ELOHIM" class="logo" />
+        <div class="mensaje-logistica" id="mensaje-logistica">¡Es un buen momento para planificar tu envío de carga!</div>
+        <div class="fecha-hora" id="fecha-hora"></div>
+      </div>
+    </header>
+
+    <h1 style="display:none;">ELOHIM Transporte y Logística - Siempre a Tiempo</h1>
+<section class="hero">
+      <div class="overlay">
+        <h2>Soluciones Logísticas Confiables</h2>
+        <p>Especialistas en transporte terrestre de corta y larga distancia.</p>
+        <div class="btn-group">
+          <a href="#galeria" class="btn secondary">Ver nuestra flota</a>
+          <a href="#maquinaria" class="btn maquinaria">Alquiler de maquinaria industrial</a>
+          <a href="mailto:transporteelohim.info@gmail.com?bcc=oscio5002@yahoo.com.ar&amp;subject=Consulta de servicio logístico&amp;body=Escribe tu consulta aquí..." class="btn">📧 Enviar Consulta por Correo</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="quienes-somos" id="quienes">
+      <h2>¿Quiénes Somos?</h2>
+      <p>En <strong>ELOHIM</strong> brindamos servicios logísticos fundamentales para la industria, desde transporte de carga pesada hasta distribución de última milla.</p>
+    </section>
+
+    <section class="servicios" id="servicios">
+      <h2>Servicios</h2>
+      <ul>
+        <li>🚛 Transporte terrestre de corta distancia</li>
+        <li>🚚 Transporte de larga distancia en todo el país</li>
+        <li>📦 Logística integral para empresas e industrias</li>
+        <li>🔄 Distribución puerta a puerta</li>
+      </ul>
+    </section>
+
+    <section class="galeria" id="galeria">
+      <h2>Nuestra Flota</h2>
+      <div class="imagenes">
+        <div>
+          <img src="assets/images/camion1.png" alt="Camión 1" />
+          <div class="descripcion-imagen">Camión de carga pesada</div>
+        </div>
+        <div>
+          <img src="assets/images/camioneta.png" alt="Camioneta" />
+          <div class="descripcion-imagen">Camioneta de reparto urbano</div>
+        </div>
+        <div>
+          <img src="assets/images/Flota.png" alt="Flota" />
+          <div class="descripcion-imagen">Nuestra flota para cualquier tipo de carga</div>
+        </div>
+        <div>
+          <img src="assets/images/camion2.png" alt="Camión 2" />
+          <div class="descripcion-imagen">Camión con caja cerrada</div>
+        </div>
+        <div>
+          <img src="assets/images/Ran1.png" alt="Ran1" />
+          <div class="descripcion-imagen">Unidad de carga liviana</div>
+        </div>
+        <div>
+          <img src="assets/images/camion4.png" alt="Camión4" />
+          <div class="descripcion-imagen">Camión de largo recorrido</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="galeria" id="maquinaria">
+      <h2>Maquinaria de Alquiler</h2>
+      <div class="imagenes">
+        <div>
+          <img src="assets/images/maquinaria1.png" alt="Maquinaria 1" />
+          <div class="descripcion-imagen">Zorras manuales</div>
+        </div>
+        <div>
+          <img src="assets/images/maquinaria2.png" alt="Maquinaria 2" />
+          <div class="descripcion-imagen">Autoelevador diesel</div>
+        </div>
+        <div>
+          <img src="assets/images/maquinaria4.png" alt="Maquinaria 4" />
+          <div class="descripcion-imagen">Tijeras</div>
+        </div>
+        <div>
+          <img src="assets/images/maquinaria3.png" alt="Maquinaria 3" />
+          <div class="descripcion-imagen">Apiladoras</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 ELOHIM Transporte y Logística - Todos los derechos reservados.</p>
+    </footer>
+  </div>
+
+  <!-- Botones flotantes -->
+  <a href="#top" class="volver-inicio" title="Volver al inicio">⬆ Volver al inicio</a>
+  <a href="https://wa.me/5491134105200" class="wsp" target="_blank" title="Contactanos por WhatsApp">💬</a>
+  <a href="mailto:transporteelohim.info@gmail.com?bcc=oscio5002@yahoo.com.ar&amp;subject=Consulta de servicio logístico&amp;body=Escribe tu consulta aquí..." class="email-flotante" title="Enviar consulta por correo">📧</a>
+
+  <!-- Contenedor oculto -->
+  <div id="pagina-oculta" style="display:none;"></div>
+
+  <script>
+    function mostrarFechaHora() {
+      const ahora = new Date();
+      const opciones = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+      const fechaHora = ahora.toLocaleDateString('es-ES', opciones);
+      document.getElementById('fecha-hora').innerText = fechaHora;
+    }
+    
+    // Mostrar fecha y hora al cargar la página
+    mostrarFechaHora();
+  </script>
+</body>
+</html>
